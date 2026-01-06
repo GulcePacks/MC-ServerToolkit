@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Ev Sistemi",
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "id",
+      "label": "ID",
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 50
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "columns": 2,
+  "actions": [
+    {
+      "label": "Ev'e Git",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function admin:commands/home {id:\"$(id)\"}"
+      }
+    },
+    {
+      "label": "Ev Ayarla",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function admin:commands/sethome {id:\"$(id)\"}"
+      }
+    },
+    {
+      "label": "Ev'i Sil",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function admin:commands/delhome {id:\"$(id)\"}"
+      }
+    }
+  ]
+}
