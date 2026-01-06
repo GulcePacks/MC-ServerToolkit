@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 🔐 Security Vulnerability
+    url: https://github.com/asn44nb/MC-ServerToolkit/security/policy
+    about: Güvenlik açıklarını herkese açık issue yerine buradan bildirin.
